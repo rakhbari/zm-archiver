@@ -57,6 +57,7 @@ processPaths () {
   local temp_source_dir=${TEMP_DIR}/${CNT}
   mkdir -p ${temp_source_dir}
   local temp_source=${temp_source_dir}/${SOURCES_FILE}
+  touch ${temp_source}
   local monitor_id=$1
   local begin_path=$2
   local end_path=$3
